@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Автор</title>
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <div class="header">new header</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <div class="news-box">
-                    <p class="name-news">Новость лучшая</p>
-                    <p class="content-news">просто все прекрасно</p>
-                </div>
-                <div class="news-box">
-                    <p class="name-news">Новость средняя</p>
-                    <p class="content-news">просто все хорошо</p>
-                </div>
-                <div class="news-box">
-                    <p class="name-news">Новость лучшая (плохих не бывает)</p>
-                    <p class="content-news">не показываем плохие новости</p>
-                </div>
-            </div>
-            <div class="footer">new footer</div>    
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="page__header">new header</header>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <main class="page__content">
+            <article class="news">
+                <h2 class="news__title">Новость лучшая</h2>
+                <p class="news__content">просто все прекрасно</p>
+            </article>
+            <article class="news">
+                <h2 class="news__title">Новость средняя</h2>
+                <p class="news__content">просто все хорошо</p>
+            </article>
+            <article class="news">
+                <h2 class="news__title">Новость лучшая (плохих не бывает)</h2>
+                <p class="news__content">не показываем плохие новости</p>
+            </article>
+        </main>
+        
+        <footer class="page__footer">new footer</footer>
+    </div>
+</body>
 </html>

@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Автор</title>
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <div class="header">new header</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="page__header">new header</header>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <main class="page__content">
+            <div class="card">
+                <img class="card__image" src="../images/cuty-cat.jpg" alt="Самая милая кошка">
+                <h3 class="card__title">самая милая кошка</h3>
+                <p class="card__price">Цена: ваше сердце</p>
             </div>
-            <div class="content">
-                <div class="goods-box">
-                    <img class="image-good" src="../images/cuty-cat.jpg">
-                    <p class="name-good">самая милая кошка</p>
-                    <p class="cost-good">Цена: ваше сердце</p>
-                </div>
-                <div class="goods-box">
-                    <img class="image-good" src="../images/cat-eat-love.jpg">
-                    <p class="name-good">кошка, любищая поесть</p>
-                    <p class="cost-good">Цена: ваш кошелек</p>
-                </div>
-                <div class="goods-box">
-                    <img class="image-good" src="../images/dog-sportman.jpeg">
-                    <p class="name-good">собака спортивная</p>
-                    <p class="cost-good">Цена: ваше утро</p>
-                </div>
+            <div class="card">
+                <img class="card__image" src="../images/cat-eat-love.jpg" alt="Кошка, любящая поесть">
+                <h3 class="card__title">кошка, любящая поесть</h3>
+                <p class="card__price">Цена: ваш кошелек</p>
             </div>
-            <div class="footer">new footer</div>    
-        </div>
-    </body>
+            <div class="card">
+                <img class="card__image" src="../images/dog-sportman.jpeg" alt="Собака спортивная">
+                <h3 class="card__title">собака спортивная</h3>
+                <p class="card__price">Цена: ваше утро</p>
+            </div>
+        </main>
+        
+        <footer class="page__footer">new footer</footer>
+    </div>
+</body>
 </html>
