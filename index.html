@@ -3,67 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автор</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Автор - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-<body>
-    <div class="page">
-        <header class="page__header">new header</header>
-        
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="pages/news.html">Новости</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="pages/goods.html">Товары</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <main class="page__content">
-            <section class="profile">
-                <h1 class="profile__title">Информация об авторе</h1>
-                <img class="profile__photo" src="images/photo.jpg" alt="Фото автора">
-                <h2 class="profile__name">Царегородцев Пётр Васильевич</h2>
-                <p class="profile__group">ЭФБО-08-24</p>
-            </section>
-            
-            <section class="about">
-                <p>Я крутой парень. Отдыхаю и умею все понемногу</p>
-            </section>
-            
-            <div class="skills">
-                <span class="skills__tag">Навык 4</span>
-                <span class="skills__tag">Навык 3</span>
-                <span class="skills__tag">Навык 2</span>
-                <span class="skills__tag">Навык 1</span>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Портфолио автора</h1>
+                        <p class="mb-0 opacity-75">Студент разработчик</p>
+                    </div>
+                    <div class="col-auto">
+                        <span class="badge bg-light text-primary">ЭФБО-08-24</span>
+                    </div>
+                </div>
             </div>
-            
-            <section class="experience">
-                <h2 class="experience__title">Мой опыт работы</h2>
-                <div class="experience__card">
-                    <h3 class="experience__card-title">Опыт 1</h3>
-                    <p class="experience__card-desc">работал тем самым</p>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/news.html">
+                                <i class="bi bi-newspaper me-1"></i>Новости
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/goods.html">
+                                <i class="bi bi-cart me-1"></i>Товары
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="experience__card">
-                    <h3 class="experience__card-title">Опыт 2</h3>
-                    <p class="experience__card-desc">работал другом того самого</p>
+            </div>
+        </nav>
+        <main class="container my-4">
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center mb-3 mb-md-0">
+                                <img src="images/photo.jpg" alt="Фото автора" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                            </div>
+                            <div class="col-md-9">
+                                <h2 class="card-title h4 text-primary">Царегородцев Пётр Васильевич</h2>
+                                <p class="card-text text-muted mb-2">
+                                    <i class="bi bi-bookmark-check-fill text-primary"></i>
+                                    Студент группы ЭФБО-08-24
+                                </p>
+                                <p class="card-text">
+                                    Начинающий разработчик с большим потенциалом и стремлением к обучению
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <span class="badge bg-primary">Навык 1</span>
+                                    <span class="badge bg-success">Навык 2</span>
+                                    <span class="badge bg-info">Навык 3</span>
+                                    <span class="badge bg-warning">Навык 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="experience__card">
-                    <h3 class="experience__card-title">Опыт 3</h3>
-                    <p class="experience__card-desc">просто работал</p>
+            </section>
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">
+                            <i class="bi bi-person-circle text-primary"></i>
+                            Обо мне
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Я крутой парень. Отдыхаю и умею все понемногу
+                        </p>
+                        <p class="card-text">
+                            Люблю изучать новые технологии и применять их на практике. 
+                            Всегда открыт для интересных проектов и сотрудничества.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">
+                            <i class="bi bi-tools text-primary"></i>
+                            Мои навыки
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>Навык 1</span>
+                                        <span class="text-primary">80%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-primary" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>Навык 2</span>
+                                        <span class="text-primary">65%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-success" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>Навык 3</span>
+                                        <span class="text-primary">75%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-info" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>Навык 4</span>
+                                        <span class="text-primary">70%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">
+                            <i class="bi bi-briefcase-fill text-primary"></i>
+                            Мой опыт работы
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Опыт 1</h5>
+                                        <p class="card-text">работал тем самым</p>
+                                        <small class="text-muted">Период работы: 2022-2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Опыт 2</h5>
+                                        <p class="card-text">работал другом того самого</p>
+                                        <small class="text-muted">Период работы: 2021-2022</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Опыт 3</h5>
+                                        <p class="card-text">просто работал</p>
+                                        <small class="text-muted">Период работы: 2020-2021</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">
+                            <i class="bi bi-folder-fill text-primary"></i>
+                            Мои проекты
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="https://via.placeholder.com/300x150/4a90e2/ffffff?text=Проект+1" class="card-img-top" alt="Проект 1" style="height: 150px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Проект 1</h5>
+                                        <p class="card-text small text-muted">
+                                            Интересный проект с использованием современных технологий
+                                        </p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-primary">HTML</span>
+                                            <span class="badge bg-primary">CSS</span>
+                                            <span class="badge bg-primary">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="https://via.placeholder.com/300x150/50c878/ffffff?text=Проект+2" class="card-img-top" alt="Проект 2" style="height: 150px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Проект 2</h5>
+                                        <p class="card-text small text-muted">
+                                            Веб-приложение для решения конкретных задач
+                                        </p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-success">React</span>
+                                            <span class="badge bg-success">Node.js</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="https://via.placeholder.com/300x150/ff6b6b/ffffff?text=Проект+3" class="card-img-top" alt="Проект 3" style="height: 150px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Проект 3</h5>
+                                        <p class="card-text small text-muted">
+                                            Мобильное приложение с удобным интерфейсом
+                                        </p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-info">React Native</span>
+                                            <span class="badge bg-info">Firebase</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
-        
-        <footer class="page__footer">new footer</footer>
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2025 Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="pages/contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
