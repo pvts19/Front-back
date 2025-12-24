@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио студента-разработчика">
     <title>Автор - Портфолио</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -14,17 +15,19 @@
                 <div class="row align-items-center">
                     <div class="col">
                         <h1 class="h3 mb-1">Портфолио автора</h1>
-                        <p class="mb-0 opacity-75">Студент разработчик</p>
+                        <p class="mb-0 opacity-90">Студент разработчик</p>
                     </div>
                     <div class="col-auto">
-                        <span class="badge bg-light text-primary">ЭФБО-08-24</span>
+                        <span class="badge bg-light text-dark">ЭФБО-08-24</span>
                     </div>
                 </div>
             </div>
         </header>
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-label="Переключить навигацию">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -53,6 +56,7 @@
                 </div>
             </div>
         </nav>
+        
         <main class="container my-4">
             <section class="mb-5">
                 <div class="card shadow-sm">
@@ -73,21 +77,22 @@
                                 <div class="d-flex gap-2 flex-wrap">
                                     <span class="badge bg-primary">Навык 1</span>
                                     <span class="badge bg-success">Навык 2</span>
-                                    <span class="badge bg-info">Навык 3</span>
-                                    <span class="badge bg-warning">Навык 4</span>
+                                    <span class="badge bg-info text-dark">Навык 3</span>
+                                    <span class="badge bg-warning text-dark">Навык 4</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
             <section class="mb-5">
                 <div class="card shadow-sm">
                     <div class="card-header bg-light">
-                        <h3 class="card-title h5 mb-0">
+                        <h2 class="card-title h5 mb-0">
                             <i class="bi bi-person-circle text-primary"></i>
                             Обо мне
-                        </h3>
+                        </h2>
                     </div>
                     <div class="card-body">
                         <p class="card-text">
@@ -100,13 +105,14 @@
                     </div>
                 </div>
             </section>
+            
             <section class="mb-5">
                 <div class="card shadow-sm">
                     <div class="card-header bg-light">
-                        <h3 class="card-title h5 mb-0">
+                        <h2 class="card-title h5 mb-0">
                             <i class="bi bi-tools text-primary"></i>
                             Мои навыки
-                        </h3>
+                        </h2>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -117,7 +123,7 @@
                                         <span class="text-primary">80%</span>
                                     </div>
                                     <div class="progress" style="height: 8px;">
-                                        <div class="progress-bar bg-primary" style="width: 80%"></div>
+                                        <div class="progress-bar bg-primary" style="width: 80%" aria-label="Навык 1: 80%"></div>
                                     </div>
                                 </div>
                                 <div class="mb-3">
@@ -126,7 +132,7 @@
                                         <span class="text-primary">65%</span>
                                     </div>
                                     <div class="progress" style="height: 8px;">
-                                        <div class="progress-bar bg-success" style="width: 65%"></div>
+                                        <div class="progress-bar bg-success" style="width: 65%" aria-label="Навык 2: 65%"></div>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +143,7 @@
                                         <span class="text-primary">75%</span>
                                     </div>
                                     <div class="progress" style="height: 8px;">
-                                        <div class="progress-bar bg-info" style="width: 75%"></div>
+                                        <div class="progress-bar bg-info" style="width: 75%" aria-label="Навык 3: 75%"></div>
                                     </div>
                                 </div>
                                 <div class="mb-3">
@@ -146,7 +152,7 @@
                                         <span class="text-primary">70%</span>
                                     </div>
                                     <div class="progress" style="height: 8px;">
-                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                        <div class="progress-bar bg-warning" style="width: 70%" aria-label="Навык 4: 70%"></div>
                                     </div>
                                 </div>
                             </div>
@@ -154,20 +160,21 @@
                     </div>
                 </div>
             </section>
+            
             <section class="mb-5">
                 <div class="card shadow-sm">
                     <div class="card-header bg-light">
-                        <h3 class="card-title h5 mb-0">
+                        <h2 class="card-title h5 mb-0">
                             <i class="bi bi-briefcase-fill text-primary"></i>
                             Мой опыт работы
-                        </h3>
+                        </h2>
                     </div>
                     <div class="card-body">
                         <div class="row g-3">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title text-primary">Опыт 1</h5>
+                                        <h3 class="card-title h6 text-primary">Опыт 1</h3>
                                         <p class="card-text">работал тем самым</p>
                                         <small class="text-muted">Период работы: 2022-2023</small>
                                     </div>
@@ -176,7 +183,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title text-primary">Опыт 2</h5>
+                                        <h3 class="card-title h6 text-primary">Опыт 2</h3>
                                         <p class="card-text">работал другом того самого</p>
                                         <small class="text-muted">Период работы: 2021-2022</small>
                                     </div>
@@ -185,7 +192,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title text-primary">Опыт 3</h5>
+                                        <h3 class="card-title h6 text-primary">Опыт 3</h3>
                                         <p class="card-text">просто работал</p>
                                         <small class="text-muted">Период работы: 2020-2021</small>
                                     </div>
@@ -195,21 +202,22 @@
                     </div>
                 </div>
             </section>
+            
             <section class="mb-5">
                 <div class="card shadow-sm">
                     <div class="card-header bg-light">
-                        <h3 class="card-title h5 mb-0">
+                        <h2 class="card-title h5 mb-0">
                             <i class="bi bi-folder-fill text-primary"></i>
                             Мои проекты
-                        </h3>
+                        </h2>
                     </div>
                     <div class="card-body">
                         <div class="row g-3">
                             <div class="col-md-4">
                                 <div class="card h-100">
-                                    <img src="https://via.placeholder.com/300x150/4a90e2/ffffff?text=Проект+1" class="card-img-top" alt="Проект 1" style="height: 150px; object-fit: cover;">
+                                    <img src="https://via.placeholder.com/300x150/4a90e2/ffffff?text=Проект+1" class="card-img-top" alt="Проект 1: Веб-сайт" style="height: 150px; object-fit: cover;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Проект 1</h5>
+                                        <h3 class="card-title h6">Проект 1</h3>
                                         <p class="card-text small text-muted">
                                             Интересный проект с использованием современных технологий
                                         </p>
@@ -223,9 +231,9 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="card h-100">
-                                    <img src="https://via.placeholder.com/300x150/50c878/ffffff?text=Проект+2" class="card-img-top" alt="Проект 2" style="height: 150px; object-fit: cover;">
+                                    <img src="https://via.placeholder.com/300x150/50c878/ffffff?text=Проект+2" class="card-img-top" alt="Проект 2: Веб-приложение" style="height: 150px; object-fit: cover;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Проект 2</h5>
+                                        <h3 class="card-title h6">Проект 2</h3>
                                         <p class="card-text small text-muted">
                                             Веб-приложение для решения конкретных задач
                                         </p>
@@ -238,15 +246,15 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="card h-100">
-                                    <img src="https://via.placeholder.com/300x150/ff6b6b/ffffff?text=Проект+3" class="card-img-top" alt="Проект 3" style="height: 150px; object-fit: cover;">
+                                    <img src="https://via.placeholder.com/300x150/ff6b6b/ffffff?text=Проект+3" class="card-img-top" alt="Проект 3: Мобильное приложение" style="height: 150px; object-fit: cover;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Проект 3</h5>
+                                        <h3 class="card-title h6">Проект 3</h3>
                                         <p class="card-text small text-muted">
                                             Мобильное приложение с удобным интерфейсом
                                         </p>
                                         <div class="mb-2">
-                                            <span class="badge bg-info">React Native</span>
-                                            <span class="badge bg-info">Firebase</span>
+                                            <span class="badge bg-info text-dark">React Native</span>
+                                            <span class="badge bg-info text-dark">Firebase</span>
                                         </div>
                                     </div>
                                 </div>
@@ -256,11 +264,12 @@
                 </div>
             </section>
         </main>
+        
         <footer class="bg-dark text-white py-4 mt-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2025 Все права защищены.</p>
+                        <p class="mb-0 opacity-90">&copy; 2025 Все права защищены.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <a href="pages/contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
